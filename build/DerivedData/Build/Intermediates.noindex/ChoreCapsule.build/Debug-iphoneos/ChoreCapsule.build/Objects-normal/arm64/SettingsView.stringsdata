@@ -1,0 +1,248 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Settings/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reset everything?",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "You",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stats",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open partner mode",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Set up an accountability partner",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Accountability",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "A partner can assign chores, verify your proof, and send you Sparks. They unlock it with their own PIN on this phone.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI photo check",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "On this iPhone",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Proof",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lifetime Sparks",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Best streak",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Chores completed",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Capsules opened",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Treats redeemed",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "How Sparks work",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reset all progress",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Erases chores, proof photos, Sparks, and your whole collection.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Erase all progress",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "This can't be undone.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "How it works",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Earning Sparks ✦",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bonus rewards",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spending",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "The best rewards come from the habits that actually help you: doing things on time, every day, with real proof. Gambling is optional. Productivity is not 😌",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Got it",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 117
+        }
+      }
+    ]
+  },
+  "version": 1
+}

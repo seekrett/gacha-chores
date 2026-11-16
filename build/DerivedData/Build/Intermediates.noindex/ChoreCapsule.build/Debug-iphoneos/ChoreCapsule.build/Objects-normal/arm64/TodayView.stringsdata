@@ -1,0 +1,224 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Today/TodayView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Keep your %lld-day streak alive",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Finish any chore today. Tomorrow's bonus grows to +%lld%%.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spark Boost active",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your next %lld chore%@ pay ×1.5",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld waiting for %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld Sparks unlock when they approve. Tap to hand over the phone.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Up next",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "All chores",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 106
+        }
+      },
+      {
+        "comment": "",
+        "key": "🎉",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "All caught up!",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a new chore or go admire your collection.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "You can open %lld capsule%@!",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Who's hiding inside? 👀",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent activity",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nothing yet. Finish a chore to get started!",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sparks",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld day%@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Level %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld to level %lld 🎟️",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Daily quests",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resets at midnight",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 260
+        }
+      },
+      {
+        "comment": "",
+        "key": "Finish all 3 for a free capsule ticket",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "Claim",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 279
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,352 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Chores/CompleteChoreView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Checking your photo…",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Making sure it really shows “%@”. This stays on your phone.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Sparks for this one. Take a photo that clearly shows the finished chore.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 153
+        }
+      },
+      {
+        "comment": "",
+        "key": "That doesn't look like “%@”",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "I see: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retake photo",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI got it wrong? Ask %@",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Couldn't check your photo",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try again",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 188
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send to %@ instead",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld/15 characters minimum",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your proof",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 225
+        }
+      },
+      {
+        "comment": "",
+        "key": "What did you do? Be specific!",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use the camera for a fresh photo to get a bonus",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a note (optional)",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "I solemnly swear I actually did this 🤞",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 241
+        }
+      },
+      {
+        "comment": "",
+        "key": "You'll earn",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 261
+        }
+      },
+      {
+        "comment": "",
+        "key": "…plus a %lld%% chance of a CRITICAL CLEAN that doubles it ✨",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 271
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sparks unlock once %@ approves.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 267
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send for review",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 294
+        }
+      },
+      {
+        "comment": "",
+        "key": "Submit & collect",
+        "location": {
+          "startingColumn": 94,
+          "startingLine": 294
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 314
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 314
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a photo",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 345
+        }
+      },
+      {
+        "comment": "",
+        "key": "Camera",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 353
+        }
+      },
+      {
+        "comment": "",
+        "key": "Library",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 357
+        }
+      },
+      {
+        "comment": "",
+        "key": "CRITICAL CLEAN!",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 447
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sent for review!",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 433
+        }
+      },
+      {
+        "comment": "",
+        "key": "Chore complete!",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 433
+        }
+      },
+      {
+        "comment": "",
+        "key": "Photo verified by AI: %@",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 462
+        }
+      },
+      {
+        "comment": "",
+        "key": "Not checked: %@",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 467
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 501
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 440
+        }
+      },
+      {
+        "comment": "",
+        "key": "🎉",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 475
+        }
+      },
+      {
+        "comment": "",
+        "key": "Level %lld!",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 477
+        }
+      },
+      {
+        "comment": "",
+        "key": "You got a free capsule ticket.",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 478
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ needs to approve before the Sparks land. Hand them your phone (Partner mode), or send the proof:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 486
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open a capsule",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 496
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send proof to %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 516
+        }
+      },
+      {
+        "comment": "",
+        "key": "Message %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 521
+        }
+      }
+    ]
+  },
+  "version": 1
+}

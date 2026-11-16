@@ -1,0 +1,136 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Collection/CollectionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Collection",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series master",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld/%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series complete! Claim %lld Sparks + 2 tickets",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "×%lld",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "You have %lld Glitter. Duplicates give you more.",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Polished to shiny",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "A secret figure. Only the luckiest (and tidiest) will find it.",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 219
+        }
+      },
+      {
+        "comment": "",
+        "key": "Not found yet. Open %@ capsules, or watch for it on the shop's daily shelf.",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Owned",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "First found",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "Polish to shiny · %lld Glitter",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 205
+        }
+      },
+      {
+        "comment": "",
+        "key": "Show it off",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 240
+        }
+      }
+    ]
+  },
+  "version": 1
+}

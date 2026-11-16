@@ -1,0 +1,120 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/UnboxingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Skip",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pick your box",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Trust your gut. One of these is calling you.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "✨ SECRET FIGURE ✨",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Duplicate → +%lld Glitter",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next box",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "NEW!",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "Guaranteed",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your haul",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 267
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld new · %lld duplicate%@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add to collection",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 286
+        }
+      },
+      {
+        "comment": "",
+        "key": "NEW",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld ◆",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 279
+        }
+      }
+    ]
+  },
+  "version": 1
+}

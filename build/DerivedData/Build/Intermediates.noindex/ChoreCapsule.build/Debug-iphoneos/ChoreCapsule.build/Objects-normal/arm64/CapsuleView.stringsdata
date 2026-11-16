@@ -1,0 +1,128 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/CapsuleView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Capsules",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld/%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lucky Charm ready: your next capsule is Rare or better",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pick a box",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open a case ×10",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld · Rare+ guaranteed",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use a ticket (%lld left)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "You need %lld more Sparks. Go finish a chore! 💪",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "Odds & guarantees",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Epic or better guaranteed within %lld capsules",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Secret guaranteed within %lld capsules",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "Duplicates turn into Glitter, which polishes figures to shiny",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 164
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 152
+        }
+      },
+      {
+        "comment": "",
+        "key": "In this series",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 173
+        }
+      }
+    ]
+  },
+  "version": 1
+}

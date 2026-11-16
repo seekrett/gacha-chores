@@ -1,0 +1,328 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Chores/ChoresView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Chores",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Assigned by %@",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting for %@",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nothing left. You're a legend ✨",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "To do",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap a chore to submit your proof and earn Sparks.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner unlock",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Only %@ can edit or remove this chore. That's the point of accountability 😉",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Archive",
+        "location": {
+          "startingColumn": 82,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Locked",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Overdue: bonus missed",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "By %@ for +20%%",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sent back: %@",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "Assign a chore",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "New chore",
+        "location": {
+          "startingColumn": 89,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit chore",
+        "location": {
+          "startingColumn": 104,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "What needs doing?",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes (optional)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ is %@ · base %lld Sparks",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Size",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "How big is it?",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Proof required",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "Repeats",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "Deadline",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 278
+        }
+      },
+      {
+        "comment": "",
+        "key": "Due",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 280
+        }
+      },
+      {
+        "comment": "",
+        "key": "Every day by",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 280
+        }
+      },
+      {
+        "comment": "",
+        "key": "Schedule",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 286
+        }
+      },
+      {
+        "comment": "",
+        "key": "Weekly chores reset every week.",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "Finish before the deadline for a +20% bonus.",
+        "location": {
+          "startingColumn": 92,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ask %@ to verify",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Verified chores earn +15%%. The Sparks unlock once %@ approves your proof.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 296
+        }
+      },
+      {
+        "comment": "",
+        "key": "Estimated reward",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 313
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 315
+        }
+      }
+    ]
+  },
+  "version": 1
+}

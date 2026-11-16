@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Components/FigureView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "?",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "?",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 453
+        }
+      }
+    ]
+  },
+  "version": 1
+}

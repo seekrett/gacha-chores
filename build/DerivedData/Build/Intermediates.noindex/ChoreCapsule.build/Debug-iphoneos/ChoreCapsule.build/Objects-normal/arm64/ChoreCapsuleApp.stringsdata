@@ -1,0 +1,96 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/ChoreCapsuleApp.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Level up! 🎉",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Heads up",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Chores",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Capsules",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Collection",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shop",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Yay!",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "You reached level %lld. Here's a free capsule ticket 🎟️",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 68
+        }
+      }
+    ]
+  },
+  "version": 1
+}

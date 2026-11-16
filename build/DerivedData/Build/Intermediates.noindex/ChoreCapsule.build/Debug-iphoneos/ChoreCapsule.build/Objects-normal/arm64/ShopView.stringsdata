@@ -1,0 +1,248 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Shop/ShopView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Shop",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Buy %@?",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Redeem %@?",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spend Sparks on a sure thing, or roll the dice in Capsules. Your call.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Buy for %lld Sparks",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "You already own this one. A duplicate turns into %lld Glitter.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spend %lld Sparks",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Go enjoy it, you earned it 💖",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Not owned",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Owned ×%lld",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "In use",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "Use",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a treat, like a boba run, a movie night, or a new blind box IRL.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "From %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld more Sparks to go",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 100,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recently redeemed",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 250
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 253
+        }
+      },
+      {
+        "comment": "",
+        "key": "New treat",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 307
+        }
+      },
+      {
+        "comment": "",
+        "key": "Treat",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "e.g. Boba run",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 285
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld Sparks",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 299
+        }
+      },
+      {
+        "comment": "",
+        "key": "Price",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tip: a Standard chore earns about 30 Sparks. Price treats so they take real effort.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 312
+        }
+      }
+    ]
+  },
+  "version": 1
+}

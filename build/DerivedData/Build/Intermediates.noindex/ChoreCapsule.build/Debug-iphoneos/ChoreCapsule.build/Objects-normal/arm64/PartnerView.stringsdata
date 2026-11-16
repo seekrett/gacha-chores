@@ -1,0 +1,376 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/PartnerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Lock & close",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Set up an accountability partner",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hand the phone to %@",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your partner picks a secret PIN. With it they can assign chores you can't delete, approve or reject your proof, award gold stars, and send you Sparks.",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner mode lets them review proofs, assign chores, and send encouragement.",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner's name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "4-digit PIN",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Confirm PIN",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Only your partner should know this PIN. Hand them the phone now!",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save PIN & enter partner mode",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unlock",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 217
+        }
+      },
+      {
+        "comment": "",
+        "key": "Treats",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 201
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner mode: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nothing to review right now.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting for review (%lld)",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "Assign a new chore",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 164
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 91,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Chores you assigned",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "These are locked for your partner and always need your approval. They earn a +15% verified bonus.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "Message (e.g. proud of you!)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 188
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld Sparks",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sent! Send another",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send encouragement",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send Sparks",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a real-life reward",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "New 4-digit PIN",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change PIN",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Review",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 319
+        }
+      },
+      {
+        "comment": "",
+        "key": "“%@”",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Comment for them (optional)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 292
+        }
+      },
+      {
+        "comment": "",
+        "key": "Before",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 248
+        }
+      },
+      {
+        "comment": "",
+        "key": "After",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 248
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check passed",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check flagged this photo",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 260
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check didn't run",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 261
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 281
+        }
+      },
+      {
+        "comment": "",
+        "key": "Award a gold star (+25%)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 287
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send back",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Approve",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 311
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 322
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>13</integer>
+	<key>logs</key>
+	<dict>
+		<key>80D803B7-AA3A-4ACC-8B26-115E5393FD61</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>80D803B7-AA3A-4ACC-8B26-115E5393FD61.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ChoreCapsule project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ChoreCapsule</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
+			<key>timeStartedRecording</key>
+			<real>816496744.27020502</real>
+			<key>timeStoppedRecording</key>
+			<real>816496758.10946</real>
+			<key>title</key>
+			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
+			<key>uniqueIdentifier</key>
+			<string>80D803B7-AA3A-4ACC-8B26-115E5393FD61</string>
+		</dict>
+		<key>E73FC9B9-26DA-43E2-97D0-B850344B8564</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E73FC9B9-26DA-43E2-97D0-B850344B8564.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ChoreCapsule project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ChoreCapsule</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
+			<key>timeStartedRecording</key>
+			<real>816497307.17087805</real>
+			<key>timeStoppedRecording</key>
+			<real>816497320.86909103</real>
+			<key>title</key>
+			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
+			<key>uniqueIdentifier</key>
+			<string>E73FC9B9-26DA-43E2-97D0-B850344B8564</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
