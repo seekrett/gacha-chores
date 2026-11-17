@@ -2,23 +2,47 @@ import SwiftUI
 
 struct PartnerView: View {
     @EnvironmentObject var store: GameStore
+    @EnvironmentObject var sync: PartnerSync
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NavigationStack {
             Group {
-                if store.partnerUnlocked {
-                    PartnerPanel()
+                if sync.isConfigured {
+                    PartnersHubView()
                 } else {
-                    PINGateView()
+                    SamePhonePartnerView()
                 }
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button(store.partnerUnlocked ? "Lock & close" : "Close") {
+                    Button("Close") {
                         store.lockPartner()
                         dismiss()
                     }
+                }
+            }
+        }
+        .onDisappear { store.lockPartner() }
+    }
+}
+
+/// The original partner mode: the partner uses this phone and a PIN.
+struct SamePhonePartnerView: View {
+    @EnvironmentObject var store: GameStore
+
+    var body: some View {
+        Group {
+            if store.partnerUnlocked {
+                PartnerPanel()
+            } else {
+                PINGateView()
+            }
+        }
+        .toolbar {
+            if store.partnerUnlocked {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Lock") { store.lockPartner() }
                 }
             }
         }

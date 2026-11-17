@@ -1,9 +1,11 @@
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Models/Catalog.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Models/Models.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/GameStore.swift
-/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/KeychainStore.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/PhotoStore.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/PhotoVerifier.swift
+/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/PartnerSync.swift
+/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/SupabaseClient.swift
+/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/SupabaseConfig.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/CapsuleView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/UnboxingView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Chores/ChoresView.swift
@@ -11,6 +13,8 @@
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Collection/CollectionView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Components/FigureView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Components/Theme.swift
+/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/OnlinePartnerViews.swift
+/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/PartnerDashboardView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/PartnerView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Settings/SettingsView.swift
 /Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Shop/ShopView.swift

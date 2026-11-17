@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 enum AppTab: Hashable {
-    case today, chores, capsules, collection, shop
+    case today, chores, capsules, partner, collection
 }
 
 struct QuestDef: Identifiable {
@@ -24,6 +24,16 @@ struct PullResult: Identifiable, Hashable {
 
 enum PullPayment {
     case sparks, ticket
+}
+
+/// Who has to verify a chore before its Sparks are paid.
+enum VerificationRoute: Equatable {
+    /// The on-device AI approves the photo; Sparks are paid straight away.
+    case ai
+    /// A partner approves it (the AI still pre-checks photos when it can).
+    case partner
+    /// Nobody can verify it, so it can't be submitted.
+    case blocked(String)
 }
 
 /// How a photo proof was checked before submitting.
@@ -58,6 +68,7 @@ final class GameStore: ObservableObject {
     @Published var partnerUnlocked = false
     @Published var pendingLevelUp: Int? = nil
     @Published var notice: String? = nil
+    let sync = PartnerSync()
 
     static let singleCost = 100
     static let tenCost = 900
@@ -91,6 +102,7 @@ final class GameStore: ObservableObject {
             .debounce(for: .milliseconds(400), scheduler: RunLoop.main)
             .sink { [weak self] s in self?.write(s) }
         refreshStreak()
+        sync.store = self
     }
 
     // MARK: Persistence
@@ -135,11 +147,21 @@ final class GameStore: ObservableObject {
 
     // MARK: Helpers
 
-    var partnerDisplayName: String {
-        state.partnerName.isEmpty ? "your partner" : state.partnerName
+    var onlinePartners: [OnlinePartner] {
+        sync.isOn ? (state.onlinePartners ?? []) : []
     }
 
-    var hasPartner: Bool { state.partnerPIN != nil }
+    var hasOnlinePartner: Bool { !onlinePartners.isEmpty }
+
+    /// Everyone who can check your proof, e.g. "Sam" or "Sam or Lee".
+    var partnerDisplayName: String {
+        var names = onlinePartners.map(\.name)
+        if state.partnerPIN != nil { names.insert(state.partnerName.isEmpty ? "your partner" : state.partnerName, at: 0) }
+        guard !names.isEmpty else { return "your partner" }
+        return names.formatted(.list(type: .or))
+    }
+
+    var hasPartner: Bool { state.partnerPIN != nil || hasOnlinePartner }
 
     static func dayKey(_ date: Date) -> String {
         let c = Calendar.current.dateComponents([.year, .month, .day], from: date)
@@ -240,8 +262,28 @@ final class GameStore: ObservableObject {
 
     var aiPhotoCheckOn: Bool { !(state.aiPhotoCheckOff ?? false) }
 
+    /// The AI photo check is switched on and this iPhone can run it.
+    var aiPhotoCheckReady: Bool { aiPhotoCheckOn && PhotoVerifier.status.available }
+
+    /// Something can verify chores: a partner, or the AI for photo chores.
+    var canEarnSparks: Bool { hasPartner || aiPhotoCheckReady }
+
+    /// Sparks are only paid once a partner or the AI has verified the proof.
+    func verificationRoute(for chore: Chore) -> VerificationRoute {
+        let isPhoto = chore.proof == .photo || chore.proof == .beforeAfter
+        if chore.requiresReview && hasPartner { return .partner }
+        if isPhoto && aiPhotoCheckReady { return .ai }
+        if hasPartner { return .partner }
+        if isPhoto {
+            return .blocked(aiPhotoCheckOn
+                ? "\(PhotoVerifier.status.message) Add an accountability partner to verify your photos instead."
+                : "The AI photo check is off. Turn it on in Settings, or add an accountability partner.")
+        }
+        return .blocked("\(chore.proof.label) chores can only be verified by a partner. Add an accountability partner to earn Sparks for this one.")
+    }
+
     func previewBreakdown(for chore: Chore, liveCamera: Bool = false, rollCrit: Bool = false,
-                          unverified: Bool = false, at now: Date = .now) -> PointBreakdown {
+                          at now: Date = .now) -> PointBreakdown {
         var b = PointBreakdown()
         let base = chore.difficulty.basePoints
         b.lines.append(PointLine(label: "\(chore.difficulty.label) chore", amount: base, icon: chore.difficulty.icon))
@@ -253,13 +295,10 @@ final class GameStore: ObservableObject {
         if liveCamera && (chore.proof == .photo || chore.proof == .beforeAfter) {
             b.lines.append(PointLine(label: "Fresh camera photo", amount: max(2, base / 10), icon: "camera.aperture"))
         }
-        if unverified {
-            b.lines.append(PointLine(label: "Photo couldn't be verified −50%", amount: -(b.subtotal / 2), icon: "eye.slash"))
-        }
         if let d = chore.effectiveDeadline(on: now), now <= d {
             b.lines.append(PointLine(label: "Beat the deadline", amount: max(3, base / 5), icon: "alarm.fill"))
         }
-        if chore.requiresReview {
+        if verificationRoute(for: chore) == .partner {
             b.lines.append(PointLine(label: "Verified by \(partnerDisplayName)", amount: max(3, base * 15 / 100), icon: "checkmark.seal.fill"))
         }
 
@@ -285,26 +324,28 @@ final class GameStore: ObservableObject {
     func submit(chore: Chore, photos: [UIImage], note: String, liveCamera: Bool, check: PhotoCheck = .none) -> Submission {
         let files = photos.compactMap { PhotoStore.save($0) }
 
-        var needsPartner = chore.requiresReview && hasPartner
-        var unverifiedSolo = false
+        let route = verificationRoute(for: chore)
+        var needsPartner: Bool
         var aiNote: String?
         var aiVerified: Bool?
         switch check {
         case .none:
-            break
+            // No AI check ran, so only a partner can verify it.
+            needsPartner = true
         case .verified(let observed):
             aiNote = observed
             aiVerified = true
+            needsPartner = route == .partner
         case .unverified(let reason):
             aiNote = reason
-            if hasPartner { needsPartner = true } else { unverifiedSolo = true }
+            needsPartner = true
         case .partnerAppeal(let note):
             aiNote = note
             aiVerified = false
             needsPartner = true
         }
 
-        let breakdown = previewBreakdown(for: chore, liveCamera: liveCamera, rollCrit: true, unverified: unverifiedSolo)
+        let breakdown = previewBreakdown(for: chore, liveCamera: liveCamera, rollCrit: true)
         if state.doubleSparkCharges > 0 { state.doubleSparkCharges -= 1 }
 
         var sub = Submission(choreID: chore.id, choreTitle: chore.title, choreEmoji: chore.emoji,
@@ -328,12 +369,16 @@ final class GameStore: ObservableObject {
 
         if needsPartner {
             sub.status = .pending
+            if hasOnlinePartner { sub.awaitingUpload = true }
         } else {
             sub.status = .approved
             sub.reviewedAt = .now
             award(breakdown.total, reason: "\(chore.emoji) \(chore.title)")
         }
         state.submissions.insert(sub, at: 0)
+        if sub.awaitingUpload == true {
+            Task { await sync.refresh() }
+        }
         return sub
     }
 
@@ -349,29 +394,37 @@ final class GameStore: ObservableObject {
         state.submissions.first { $0.choreID == chore.id }
     }
 
-    func approve(_ id: UUID, comment: String, goldStar: Bool) {
-        guard let i = state.submissions.firstIndex(where: { $0.id == id }) else { return }
+    /// Returns the Sparks awarded (0 if it was no longer pending).
+    @discardableResult
+    func approve(_ id: UUID, comment: String, goldStar: Bool, reviewer: String? = nil) -> Int {
+        guard let i = state.submissions.firstIndex(where: { $0.id == id }) else { return 0 }
         var s = state.submissions[i]
-        guard s.status == .pending else { return }
+        guard s.status == .pending else { return 0 }
+        let who = reviewer ?? (state.partnerName.isEmpty ? "your partner" : state.partnerName)
         if goldStar {
             let bonus = max(5, s.breakdown.total / 4)
-            s.breakdown.lines.append(PointLine(label: "Gold star from \(partnerDisplayName)", amount: bonus, icon: "star.circle.fill"))
+            s.breakdown.lines.append(PointLine(label: "Gold star from \(who)", amount: bonus, icon: "star.circle.fill"))
         }
         s.status = .approved
         s.partnerComment = comment
         s.goldStar = goldStar
         s.reviewedAt = .now
+        s.reviewerName = who
+        s.awaitingUpload = nil
         state.submissions[i] = s
-        award(s.breakdown.total, reason: "\(s.choreEmoji) \(s.choreTitle) (verified)")
+        award(s.breakdown.total, reason: "\(s.choreEmoji) \(s.choreTitle) (verified by \(who))")
+        return s.breakdown.total
     }
 
-    func reject(_ id: UUID, comment: String) {
+    func reject(_ id: UUID, comment: String, reviewer: String? = nil) {
         guard let i = state.submissions.firstIndex(where: { $0.id == id }) else { return }
         var s = state.submissions[i]
         guard s.status == .pending else { return }
         s.status = .rejected
         s.partnerComment = comment
         s.reviewedAt = .now
+        s.reviewerName = reviewer ?? (state.partnerName.isEmpty ? "your partner" : state.partnerName)
+        s.awaitingUpload = nil
         state.submissions[i] = s
         if let c = state.chores.firstIndex(where: { $0.id == s.choreID }) {
             state.chores[c].lastCompletedAt = s.previousCompletion
@@ -385,8 +438,9 @@ final class GameStore: ObservableObject {
         return latest
     }
 
-    func gift(_ amount: Int, message: String) {
-        let text = message.isEmpty ? "Gift from \(partnerDisplayName)" : "\(partnerDisplayName): \(message)"
+    func gift(_ amount: Int, message: String, from sender: String? = nil) {
+        let who = sender ?? (state.partnerName.isEmpty ? "your partner" : state.partnerName)
+        let text = message.isEmpty ? "Gift from \(who)" : "\(who): \(message)"
         award(amount, reason: "💌 \(text)")
     }
 
@@ -410,7 +464,7 @@ final class GameStore: ObservableObject {
     }
 
     func canEdit(_ chore: Chore) -> Bool {
-        chore.assignedBy == .me || partnerUnlocked
+        chore.remoteAssignerID == nil && (chore.assignedBy == .me || partnerUnlocked)
     }
 
     // MARK: Daily quests

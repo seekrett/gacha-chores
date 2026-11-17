@@ -1,9 +1,11 @@
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Catalog.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Models.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/GameStore.o
-/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoStore.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoVerifier.o
+/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.o
+/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.o
+/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CapsuleView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.o
@@ -11,6 +13,8 @@
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CollectionView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/FigureView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Theme.o
+/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.o
+/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SettingsView.o
 /Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ShopView.o

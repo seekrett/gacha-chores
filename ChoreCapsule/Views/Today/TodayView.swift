@@ -2,6 +2,7 @@ import SwiftUI
 
 struct TodayView: View {
     @EnvironmentObject var store: GameStore
+    @EnvironmentObject var sync: PartnerSync
     @State private var completing: Chore?
     @State private var showSettings = false
     @State private var showPartner = false
@@ -31,6 +32,7 @@ struct TodayView: View {
                     HeaderCard()
                     if store.isStreakAtRisk { streakRiskCard }
                     if store.state.doubleSparkCharges > 0 { boostBanner }
+                    if !store.canEarnSparks { verifyFirstCard }
                     if !store.pendingSubmissions.isEmpty { pendingCard }
                     QuestsCard()
                     upNextCard
@@ -44,7 +46,19 @@ struct TodayView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
                     Button { showHow = true } label: { Image(systemName: "questionmark.circle") }
-                    Button { showPartner = true } label: { Image(systemName: "person.2.fill") }
+                    Button { store.selectedTab = .partner } label: {
+                        Image(systemName: "person.2.fill")
+                            .overlay(alignment: .topTrailing) {
+                                if !sync.reviewsToDo.isEmpty {
+                                    Text("\(sync.reviewsToDo.count)")
+                                        .font(.system(size: 10, weight: .bold))
+                                        .foregroundStyle(.white)
+                                        .padding(.horizontal, 4).padding(.vertical, 1)
+                                        .background(Capsule().fill(.red))
+                                        .offset(x: 8, y: -6)
+                                }
+                            }
+                    }
                     Button { showSettings = true } label: { Image(systemName: "gearshape.fill") }
                 }
             }
@@ -80,14 +94,35 @@ struct TodayView: View {
         .card()
     }
 
+    private var verifyFirstCard: some View {
+        Button { store.selectedTab = .partner } label: {
+            HStack(spacing: 12) {
+                Image(systemName: "lock.shield.fill").font(.title).foregroundStyle(.orange.gradient)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Add a partner to start earning").font(.headline)
+                    Text("Chores only pay once they're verified, and this iPhone can't check photos with AI. Tap to invite an accountability partner.")
+                        .font(.subheadline).foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right").foregroundStyle(.tertiary)
+            }
+        }
+        .buttonStyle(.plain)
+        .card()
+    }
+
     private var pendingCard: some View {
-        Button { showPartner = true } label: {
+        Button { store.selectedTab = .partner } label: {
             HStack(spacing: 12) {
                 Image(systemName: "hourglass").font(.title2).foregroundStyle(Palette.lavender)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("\(store.pendingSubmissions.count) waiting for \(store.partnerDisplayName)").font(.headline)
                     let held = store.pendingSubmissions.reduce(0) { $0 + $1.breakdown.total }
-                    Text("\(held) Sparks unlock when they approve. Tap to hand over the phone.")
+                    Text(store.hasOnlinePartner
+                         ? "\(held) Sparks unlock when they approve on their phone."
+                         : store.hasPartner
+                            ? "\(held) Sparks unlock when they approve. Tap to hand over the phone."
+                            : "\(held) Sparks are held until you add a partner.")
                         .font(.subheadline).foregroundStyle(.secondary)
                 }
                 Spacer()

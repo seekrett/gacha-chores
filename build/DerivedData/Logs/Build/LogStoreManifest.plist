@@ -6,7 +6,7 @@
 	<integer>13</integer>
 	<key>logs</key>
 	<dict>
-		<key>80D803B7-AA3A-4ACC-8B26-115E5393FD61</key>
+		<key>20BD1428-7D7D-44E8-A029-EE0C3516A205</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>80D803B7-AA3A-4ACC-8B26-115E5393FD61.xcactivitylog</string>
+			<string>20BD1428-7D7D-44E8-A029-EE0C3516A205.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
 			<key>timeStartedRecording</key>
-			<real>816496744.27020502</real>
+			<real>816580427.676126</real>
 			<key>timeStoppedRecording</key>
-			<real>816496758.10946</real>
+			<real>816580438.08081901</real>
 			<key>title</key>
 			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
 			<key>uniqueIdentifier</key>
-			<string>80D803B7-AA3A-4ACC-8B26-115E5393FD61</string>
+			<string>20BD1428-7D7D-44E8-A029-EE0C3516A205</string>
 		</dict>
-		<key>E73FC9B9-26DA-43E2-97D0-B850344B8564</key>
+		<key>C368BE75-568A-455D-B102-9E94534D74E0</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E73FC9B9-26DA-43E2-97D0-B850344B8564.xcactivitylog</string>
+			<string>C368BE75-568A-455D-B102-9E94534D74E0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
 			<key>timeStartedRecording</key>
-			<real>816497307.17087805</real>
+			<real>816580646.96159101</real>
 			<key>timeStoppedRecording</key>
-			<real>816497320.86909103</real>
+			<real>816580655.52469695</real>
 			<key>title</key>
 			<string>Building project ChoreCapsule with scheme ChoreCapsule</string>
 			<key>uniqueIdentifier</key>
-			<string>E73FC9B9-26DA-43E2-97D0-B850344B8564</string>
+			<string>C368BE75-568A-455D-B102-9E94534D74E0</string>
 		</dict>
 	</dict>
 </dict>

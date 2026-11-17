@@ -1,0 +1,496 @@
+{
+  "source": "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/OnlinePartnerViews.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Partners",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove %@?",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Same-phone partner (PIN)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "For a partner who reviews on this phone, unlocked with their PIN.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "They'll stop seeing your proof. Chores they assigned stay on your list but can't be edited.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your name (partners see this)",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partners on their own phones",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share an invite code with a friend. They can assign you chores and check your proof from their phone, and your Sparks unlock once they approve. You can check theirs too.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Turn on online partners",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your chores, Sparks and collection stay on this phone. Only proof waiting for review, chores partners assign, and Spark gifts go through the partner server.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your invite code",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Not connected",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "Give this code to someone you want checking your chores. They enter it on their phone.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nobody yet. Share your invite code.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remove",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "Checking your chores",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Proof for chores that need verifying goes to them. Any one of them can approve it. Swipe to remove.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 136
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld to review",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "Friend's invite code",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "Join",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "You check chores for",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 173
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter a friend's code to become their partner. You can be a partner for several people, and they can be yours at the same time.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Syncing…",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Updated %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop being %@'s partner?",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nothing to review right now.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "Waiting for your review (%lld)",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "Assign a chore",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 254
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 105,
+          "startingLine": 264
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 106,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "Chores you assigned",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ can't edit or delete these, and they always need a partner's approval. They earn a +15%% verified bonus.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 271
+        }
+      },
+      {
+        "comment": "",
+        "key": "Message (e.g. proud of you!)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 278
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld Sparks",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 276
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sent! Send another",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send encouragement",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send Sparks",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 294
+        }
+      },
+      {
+        "comment": "",
+        "key": "Gifts arrive the next time %@ opens Chore Capsule.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 296
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop being %@'s partner",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stop",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 316
+        }
+      },
+      {
+        "comment": "",
+        "key": "You won't see their proof any more. They can invite you again with their code.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 323
+        }
+      },
+      {
+        "comment": "",
+        "key": "Review",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 426
+        }
+      },
+      {
+        "comment": "",
+        "key": "“%@”",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 380
+        }
+      },
+      {
+        "comment": "",
+        "key": "Comment for %@ (optional)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 400
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ · %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "Before",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "After",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check passed",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 367
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check flagged this photo",
+        "location": {
+          "startingColumn": 69,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "AI check didn't run",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 387
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 389
+        }
+      },
+      {
+        "comment": "",
+        "key": "Award a gold star (+25%)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 395
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send back",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 411
+        }
+      },
+      {
+        "comment": "",
+        "key": "Approve",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 416
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 429
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,6 +3,7 @@ import SwiftUI
 struct CollectionView: View {
     @EnvironmentObject var store: GameStore
     @State private var selected: FigureDef?
+    @State private var showShop = false
 
     private var theme: ShelfTheme { store.state.selectedTheme }
     private var textColor: Color { theme.isDark ? .white : Palette.ink }
@@ -29,6 +30,15 @@ struct CollectionView: View {
             .navigationTitle("Collection")
             .toolbarColorScheme(theme.isDark ? .dark : .light, for: .navigationBar)
             .sheet(item: $selected) { FigureDetailView(figure: $0) }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { showShop = true } label: { Label("Shop", systemImage: "bag.fill") }
+                        .labelStyle(.titleAndIcon)
+                }
+            }
+            .sheet(isPresented: $showShop) {
+                ShopView().presentationDragIndicator(.visible)
+            }
         }
     }
 

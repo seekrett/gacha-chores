@@ -18,15 +18,13 @@ struct SettingsView: View {
 
                 Section {
                     if store.hasPartner {
-                        LabeledContent("Partner", value: store.state.partnerName)
-                        Button("Open partner mode") { showPartner = true }
-                    } else {
-                        Button("Set up an accountability partner") { showPartner = true }
+                        LabeledContent("Partners", value: store.partnerDisplayName.capitalizedFirst)
                     }
+                    Button(store.hasPartner ? "Manage partners" : "Set up an accountability partner") { showPartner = true }
                 } header: {
                     Text("Accountability")
                 } footer: {
-                    Text("A partner can assign chores, verify your proof, and send you Sparks. They unlock it with their own PIN on this phone.")
+                    Text("Partners assign chores, verify your proof, and send you Sparks, from their own phone with an invite code, or on this phone with a PIN.")
                 }
 
                 Section {
@@ -43,7 +41,7 @@ struct SettingsView: View {
                     Text(status.message
                          + (status.available
                             ? " Photos that don't match the chore earn nothing."
-                            : " Until then, unchecked photos go to your partner, or earn half Sparks without one.")
+                            : " Until then, photos go to your partner. Without a partner, chores can't earn Sparks.")
                          + (partnerLocked ? " Only \(store.partnerDisplayName) can turn this off." : ""))
                 }
 
@@ -90,7 +88,8 @@ struct HowItWorksView: View {
                     row("leaf.fill", "Chore size", "Quick 15 · Standard 30 · Big 60 · Epic 120")
                     row("photo.on.rectangle.angled", "Better proof pays more", "Before & after +30% · Photo 100% · Note −20% · Honor system −50%")
                     row("camera.aperture", "Fresh photo", "Snap it with the camera, not the library: +10%")
-                    row("checkmark.shield.fill", "AI photo check", "On iPhones with Apple Intelligence (iOS 27), your photo is checked on-device to make sure it shows the chore. Photos that don't match earn nothing. On other iPhones, the photo goes to your partner, or earns half without one")
+                    row("lock.shield.fill", "Verified or nothing", "Every chore needs a check before it pays: the AI for photos, or your accountability partner for anything. With neither, chores can't earn Sparks")
+                    row("checkmark.shield.fill", "AI photo check", "On iPhones with Apple Intelligence (iOS 27), your photo is checked on-device to make sure it shows the chore. Photos that don't match earn nothing. On other iPhones, the photo goes to your partner")
                     row("alarm.fill", "Beat the deadline", "+20% when you finish before it's due")
                     row("flame.fill", "Streaks", "+5% for every day in a row, up to +50%")
                     row("sunrise.fill", "First chore of the day", "+10 just for getting started")

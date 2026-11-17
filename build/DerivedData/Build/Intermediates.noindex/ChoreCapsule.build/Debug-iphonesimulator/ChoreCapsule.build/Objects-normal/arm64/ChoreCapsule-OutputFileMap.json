@@ -46,16 +46,6 @@
     "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/GameStore.swiftdeps",
     "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/GameStore~partial.swiftmodule"
   },
-  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/KeychainStore.swift" : {
-    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.swiftconstvalues",
-    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.d",
-    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.dia",
-    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.o",
-    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.bc",
-    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.o",
-    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore.swiftdeps",
-    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/KeychainStore~partial.swiftmodule"
-  },
   "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Store/PhotoStore.swift" : {
     "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoStore.swiftconstvalues",
     "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoStore.d",
@@ -75,6 +65,36 @@
     "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoVerifier.o",
     "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoVerifier.swiftdeps",
     "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PhotoVerifier~partial.swiftmodule"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/PartnerSync.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.dia",
+    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.o",
+    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.bc",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync.swiftdeps",
+    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerSync~partial.swiftmodule"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/SupabaseClient.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.dia",
+    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.o",
+    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.bc",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient.swiftdeps",
+    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseClient~partial.swiftmodule"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Sync/SupabaseConfig.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.dia",
+    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.o",
+    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.bc",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig.swiftdeps",
+    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/SupabaseConfig~partial.swiftmodule"
   },
   "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/CapsuleView.swift" : {
     "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CapsuleView.swiftconstvalues",
@@ -145,6 +165,26 @@
     "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Theme.o",
     "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Theme.swiftdeps",
     "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/OnlinePartnerViews.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.dia",
+    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.o",
+    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.bc",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews.swiftdeps",
+    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/OnlinePartnerViews~partial.swiftmodule"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/PartnerDashboardView.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.dia",
+    "index-unit-output-path" : "/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.o",
+    "llvm-bc" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.bc",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView.swiftdeps",
+    "swiftmodule" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerDashboardView~partial.swiftmodule"
   },
   "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Partner/PartnerView.swift" : {
     "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/PartnerView.swiftconstvalues",

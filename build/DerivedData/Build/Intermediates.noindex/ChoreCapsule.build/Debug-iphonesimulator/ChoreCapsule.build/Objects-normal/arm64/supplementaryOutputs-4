@@ -1,0 +1,23 @@
+{
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Capsules/UnboxingView.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.dia",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/UnboxingView.swiftdeps"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Chores/ChoresView.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.dia",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/ChoresView.swiftdeps"
+  },
+  "/Users/zephyr/Repositories/gacha-chores/ChoreCapsule/Views/Chores/CompleteChoreView.swift" : {
+    "const-values" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CompleteChoreView.swiftconstvalues",
+    "dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CompleteChoreView.d",
+    "diagnostics" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CompleteChoreView.dia",
+    "object" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CompleteChoreView.o",
+    "swift-dependencies" : "/Users/zephyr/Repositories/gacha-chores/build/DerivedData/Build/Intermediates.noindex/ChoreCapsule.build/Debug-iphonesimulator/ChoreCapsule.build/Objects-normal/arm64/CompleteChoreView.swiftdeps"
+  }
+}

@@ -7,7 +7,7 @@
         "key": "Settings",
         "location": {
           "startingColumn": 30,
-          "startingLine": 68
+          "startingLine": 66
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Reset everything?",
         "location": {
           "startingColumn": 33,
-          "startingLine": 74
+          "startingLine": 72
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "Stats",
         "location": {
           "startingColumn": 25,
-          "startingLine": 50
+          "startingLine": 48
         }
       },
       {
@@ -44,7 +44,7 @@
       },
       {
         "comment": "",
-        "key": "Partner",
+        "key": "Partners",
         "location": {
           "startingColumn": 40,
           "startingLine": 21
@@ -52,18 +52,18 @@
       },
       {
         "comment": "",
-        "key": "Open partner mode",
+        "key": "Manage partners",
         "location": {
-          "startingColumn": 32,
-          "startingLine": 22
+          "startingColumn": 47,
+          "startingLine": 23
         }
       },
       {
         "comment": "",
         "key": "Set up an accountability partner",
         "location": {
-          "startingColumn": 32,
-          "startingLine": 24
+          "startingColumn": 67,
+          "startingLine": 23
         }
       },
       {
@@ -71,15 +71,15 @@
         "key": "Accountability",
         "location": {
           "startingColumn": 26,
-          "startingLine": 27
+          "startingLine": 25
         }
       },
       {
         "comment": "",
-        "key": "A partner can assign chores, verify your proof, and send you Sparks. They unlock it with their own PIN on this phone.",
+        "key": "Partners assign chores, verify your proof, and send you Sparks, from their own phone with an invite code, or on this phone with a PIN.",
         "location": {
           "startingColumn": 26,
-          "startingLine": 29
+          "startingLine": 27
         }
       },
       {
@@ -87,7 +87,7 @@
         "key": "AI photo check",
         "location": {
           "startingColumn": 28,
-          "startingLine": 33
+          "startingLine": 31
         }
       },
       {
@@ -95,7 +95,7 @@
         "key": "On this iPhone",
         "location": {
           "startingColumn": 36,
-          "startingLine": 38
+          "startingLine": 36
         }
       },
       {
@@ -103,7 +103,7 @@
         "key": "Proof",
         "location": {
           "startingColumn": 26,
-          "startingLine": 40
+          "startingLine": 38
         }
       },
       {
@@ -111,7 +111,7 @@
         "key": "Lifetime Sparks",
         "location": {
           "startingColumn": 36,
-          "startingLine": 51
+          "startingLine": 49
         }
       },
       {
@@ -119,7 +119,7 @@
         "key": "Best streak",
         "location": {
           "startingColumn": 36,
-          "startingLine": 52
+          "startingLine": 50
         }
       },
       {
@@ -127,7 +127,7 @@
         "key": "Chores completed",
         "location": {
           "startingColumn": 36,
-          "startingLine": 53
+          "startingLine": 51
         }
       },
       {
@@ -135,7 +135,7 @@
         "key": "Capsules opened",
         "location": {
           "startingColumn": 36,
-          "startingLine": 54
+          "startingLine": 52
         }
       },
       {
@@ -143,7 +143,7 @@
         "key": "Treats redeemed",
         "location": {
           "startingColumn": 36,
-          "startingLine": 55
+          "startingLine": 53
         }
       },
       {
@@ -151,7 +151,7 @@
         "key": "How Sparks work",
         "location": {
           "startingColumn": 28,
-          "startingLine": 59
+          "startingLine": 57
         }
       },
       {
@@ -159,7 +159,7 @@
         "key": "Reset all progress",
         "location": {
           "startingColumn": 28,
-          "startingLine": 63
+          "startingLine": 61
         }
       },
       {
@@ -167,7 +167,7 @@
         "key": "Erases chores, proof photos, Sparks, and your whole collection.",
         "location": {
           "startingColumn": 26,
-          "startingLine": 65
+          "startingLine": 63
         }
       },
       {
@@ -175,7 +175,7 @@
         "key": "Done",
         "location": {
           "startingColumn": 70,
-          "startingLine": 70
+          "startingLine": 68
         }
       },
       {
@@ -183,7 +183,7 @@
         "key": "Erase all progress",
         "location": {
           "startingColumn": 24,
-          "startingLine": 75
+          "startingLine": 73
         }
       },
       {
@@ -191,7 +191,7 @@
         "key": "This can't be undone.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 77
+          "startingLine": 75
         }
       },
       {
@@ -199,7 +199,7 @@
         "key": "How it works",
         "location": {
           "startingColumn": 30,
-          "startingLine": 115
+          "startingLine": 114
         }
       },
       {
@@ -207,7 +207,7 @@
         "key": "Earning Sparks ✦",
         "location": {
           "startingColumn": 25,
-          "startingLine": 89
+          "startingLine": 87
         }
       },
       {
@@ -215,7 +215,7 @@
         "key": "Bonus rewards",
         "location": {
           "startingColumn": 25,
-          "startingLine": 100
+          "startingLine": 99
         }
       },
       {
@@ -223,7 +223,7 @@
         "key": "Spending",
         "location": {
           "startingColumn": 25,
-          "startingLine": 105
+          "startingLine": 104
         }
       },
       {
@@ -231,7 +231,7 @@
         "key": "The best rewards come from the habits that actually help you: doing things on time, every day, with real proof. Gambling is optional. Productivity is not 😌",
         "location": {
           "startingColumn": 26,
-          "startingLine": 111
+          "startingLine": 110
         }
       },
       {
@@ -239,7 +239,7 @@
         "key": "Got it",
         "location": {
           "startingColumn": 70,
-          "startingLine": 117
+          "startingLine": 116
         }
       }
     ]

@@ -135,6 +135,9 @@ struct Chore: Identifiable, Codable, Hashable {
     var lastCompletedAt: Date? = nil
     var completionCount: Int = 0
     var isArchived = false
+    /// Set when an online partner assigned this chore from their own phone.
+    var remoteAssignerID: UUID? = nil
+    var remoteAssignerName: String? = nil
 
     func isDone(on now: Date = .now) -> Bool {
         guard let last = lastCompletedAt else { return false }
@@ -203,6 +206,10 @@ struct Submission: Identifiable, Codable, Hashable {
     /// What the AI photo check saw (optional so older saves still load).
     var aiNote: String? = nil
     var aiVerified: Bool? = nil
+    /// True while this proof still has to be sent to online partners.
+    var awaitingUpload: Bool? = nil
+    /// Who approved or sent it back.
+    var reviewerName: String? = nil
 }
 
 // MARK: - Collection & economy
@@ -339,4 +346,14 @@ struct AppState: Codable {
 
     /// nil or false means the AI photo check is on (optional so older saves still load).
     var aiPhotoCheckOff: Bool? = nil
+
+    /// Online partners (checking chores from their own phones). Optional so older saves still load.
+    var onlinePartnersOn: Bool? = nil
+    var onlinePartners: [OnlinePartner]? = nil
+    var claimedGiftIDs: [UUID]? = nil
+}
+
+struct OnlinePartner: Codable, Hashable, Identifiable {
+    var id: UUID
+    var name: String
 }

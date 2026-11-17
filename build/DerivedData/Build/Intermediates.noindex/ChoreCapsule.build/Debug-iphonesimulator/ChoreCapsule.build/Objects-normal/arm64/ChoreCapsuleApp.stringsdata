@@ -7,7 +7,7 @@
         "key": "Level up! 🎉",
         "location": {
           "startingColumn": 16,
-          "startingLine": 56
+          "startingLine": 67
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Heads up",
         "location": {
           "startingColumn": 16,
-          "startingLine": 64
+          "startingLine": 75
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 53,
-          "startingLine": 48
+          "startingLine": 51
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "Today",
         "location": {
           "startingColumn": 17,
-          "startingLine": 38
+          "startingLine": 41
         }
       },
       {
@@ -39,7 +39,7 @@
         "key": "Chores",
         "location": {
           "startingColumn": 17,
-          "startingLine": 41
+          "startingLine": 44
         }
       },
       {
@@ -47,20 +47,12 @@
         "key": "Capsules",
         "location": {
           "startingColumn": 17,
-          "startingLine": 45
+          "startingLine": 48
         }
       },
       {
         "comment": "",
-        "key": "Collection",
-        "location": {
-          "startingColumn": 17,
-          "startingLine": 49
-        }
-      },
-      {
-        "comment": "",
-        "key": "Shop",
+        "key": "Partner",
         "location": {
           "startingColumn": 17,
           "startingLine": 52
@@ -68,10 +60,18 @@
       },
       {
         "comment": "",
+        "key": "Collection",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
         "key": "Yay!",
         "location": {
           "startingColumn": 20,
-          "startingLine": 60
+          "startingLine": 71
         }
       },
       {
@@ -79,7 +79,7 @@
         "key": "You reached level %lld. Here's a free capsule ticket 🎟️",
         "location": {
           "startingColumn": 18,
-          "startingLine": 62
+          "startingLine": 73
         }
       },
       {
@@ -87,7 +87,7 @@
         "key": "OK",
         "location": {
           "startingColumn": 20,
-          "startingLine": 68
+          "startingLine": 79
         }
       }
     ]

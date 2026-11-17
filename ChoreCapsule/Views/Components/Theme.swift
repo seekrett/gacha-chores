@@ -203,3 +203,8 @@ struct RarityBadge: View {
         .foregroundStyle(.white)
     }
 }
+
+extension String {
+    /// "your partner" → "Your partner", without lowercasing the rest like `capitalized` does.
+    var capitalizedFirst: String { prefix(1).uppercased() + dropFirst() }
+}

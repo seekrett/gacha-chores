@@ -29,9 +29,10 @@ struct CompleteChoreView: View {
     private var photos: [ProofPhoto] { [photo1, photo2].compactMap { $0 } }
     private var liveCamera: Bool { !photos.isEmpty && photos.allSatisfy(\.fromCamera) }
     private var isPhotoProof: Bool { chore.proof == .photo || chore.proof == .beforeAfter }
-    private var usesAICheck: Bool { isPhotoProof && store.aiPhotoCheckOn }
-    /// No AI and no partner: an unchecked photo earns half.
-    private var willBeUnverified: Bool { usesAICheck && !aiStatus.available && !store.hasPartner }
+    private var route: VerificationRoute { store.verificationRoute(for: chore) }
+    /// The AI looks at the photo first: it decides on the AI route, and filters junk before a partner sees it.
+    private var runsAICheck: Bool { isPhotoProof && store.aiPhotoCheckReady }
+    private var isBlocked: Bool { if case .blocked = route { true } else { false } }
 
     private var isValid: Bool {
         switch chore.proof {
@@ -67,7 +68,8 @@ struct CompleteChoreView: View {
 
     private func submitTapped() {
         Haptics.impact(.medium)
-        guard usesAICheck else {
+        guard !isBlocked else { return }
+        guard runsAICheck else {
             finish(.none)
             return
         }
@@ -82,7 +84,12 @@ struct CompleteChoreView: View {
                 Haptics.warning()
                 withAnimation(.spring) { phase = .rejected(observed: observed, reason: reason) }
             case .unavailable(let reason):
-                finish(.unverified(reason))
+                if store.hasPartner {
+                    finish(.unverified(reason))
+                } else {
+                    Haptics.warning()
+                    withAnimation(.spring) { phase = .failed(reason) }
+                }
             case .failed(let reason):
                 Haptics.warning()
                 withAnimation(.spring) { phase = .failed(reason) }
@@ -107,21 +114,43 @@ struct CompleteChoreView: View {
 
     // MARK: Check UI
 
+    /// Says up front who verifies this chore.
     @ViewBuilder
-    private var aiStatusRow: some View {
-        if usesAICheck {
+    private var verifierRow: some View {
+        switch route {
+        case .ai:
             Label {
-                Text(aiStatus.available
-                     ? "AI photo check: " + aiStatus.message + " No Sparks unless it matches the chore."
-                     : aiStatus.message + (store.hasPartner
-                                           ? " Your photo will go to \(store.partnerDisplayName) instead."
-                                           : " Unchecked photos earn half."))
+                Text("Checked by AI on this iPhone. Sparks are paid only if the photo clearly shows the finished chore.")
             } icon: {
-                Image(systemName: aiStatus.available ? "checkmark.shield.fill" : "exclamationmark.shield.fill")
-                    .foregroundStyle(aiStatus.available ? Palette.mint.adjusted(brightness: -0.25) : .orange)
+                Image(systemName: "checkmark.shield.fill").foregroundStyle(Palette.mint.adjusted(brightness: -0.25))
             }
-            .font(.caption)
-            .foregroundStyle(.secondary)
+            .font(.subheadline)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .card()
+        case .partner:
+            Label {
+                Text("\(store.partnerDisplayName.capitalizedFirst) verifies this. Sparks land when they approve."
+                     + (runsAICheck ? " The AI checks your photo first." : ""))
+            } icon: {
+                Image(systemName: "person.fill.checkmark").foregroundStyle(Palette.lavender.adjusted(brightness: -0.2))
+            }
+            .font(.subheadline)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .card()
+        case .blocked(let reason):
+            VStack(alignment: .leading, spacing: 10) {
+                Label("Nobody can verify this yet", systemImage: "lock.fill").font(.headline)
+                Text(reason).font(.subheadline).foregroundStyle(.secondary)
+                Button {
+                    dismiss()
+                    store.selectedTab = .partner
+                } label: {
+                    Label("Set up a partner", systemImage: "person.2.fill")
+                }
+                .buttonStyle(BubblyButtonStyle())
+            }
+            .card()
+            .overlay(RoundedRectangle(cornerRadius: 22, style: .continuous).stroke(.orange.opacity(0.5), lineWidth: 1.5))
         }
     }
 
@@ -214,7 +243,7 @@ struct CompleteChoreView: View {
                     HStack {
                         Tag(text: chore.difficulty.label, icon: chore.difficulty.icon, color: chore.difficulty.color.adjusted(brightness: -0.25))
                         if chore.assignedBy == .partner {
-                            Tag(text: "From \(store.partnerDisplayName)", icon: "person.fill", color: Palette.lavender.adjusted(brightness: -0.2))
+                            Tag(text: "From \(chore.remoteAssignerName ?? store.partnerDisplayName)", icon: "person.fill", color: Palette.lavender.adjusted(brightness: -0.2))
                         }
                     }
                 }
@@ -245,7 +274,6 @@ struct CompleteChoreView: View {
                     if isPhotoProof {
                         Label("Use the camera for a fresh photo to get a bonus", systemImage: "camera.aperture")
                             .font(.caption).foregroundStyle(.secondary)
-                        aiStatusRow
                     }
                     if chore.proof != .note {
                         TextField("Add a note (optional)", text: $note, axis: .vertical)
@@ -256,7 +284,9 @@ struct CompleteChoreView: View {
                 }
                 .card()
 
-                let preview = store.previewBreakdown(for: chore, liveCamera: liveCamera, unverified: willBeUnverified)
+                verifierRow
+
+                let preview = store.previewBreakdown(for: chore, liveCamera: liveCamera)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("You'll earn").font(.headline)
                     ForEach(preview.lines) { line in
@@ -270,7 +300,7 @@ struct CompleteChoreView: View {
                     }
                     Text("…plus a \(Int(GameStore.critChance * 100))% chance of a CRITICAL CLEAN that doubles it ✨")
                         .font(.caption).foregroundStyle(.secondary)
-                    if chore.requiresReview && store.hasPartner {
+                    if route == .partner {
                         Text("Sparks unlock once \(store.partnerDisplayName) approves.")
                             .font(.caption).foregroundStyle(Palette.lavender.adjusted(brightness: -0.2))
                     }
@@ -291,10 +321,10 @@ struct CompleteChoreView: View {
                     Button {
                         submitTapped()
                     } label: {
-                        Label(chore.requiresReview && store.hasPartner ? "Send for review" : "Submit & collect", systemImage: "sparkles")
+                        Label(route == .partner ? "Send for review" : "Submit & collect", systemImage: "sparkles")
                     }
                     .buttonStyle(BubblyButtonStyle())
-                    .disabled(!isValid)
+                    .disabled(!isValid || isBlocked)
                 }
             }
             .padding()
@@ -481,13 +511,24 @@ struct SubmissionResultView: View {
                         .card()
                     }
 
-                    if isPending {
+                    if isPending && store.hasOnlinePartner {
+                        Label("Sent to \(store.partnerDisplayName)'s phone. The Sparks land as soon as one of them approves.",
+                              systemImage: "paperplane.fill")
+                            .font(.subheadline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .card()
+                    } else if isPending && store.hasPartner {
                         VStack(alignment: .leading, spacing: 10) {
-                            Text("\(store.partnerDisplayName.capitalized) needs to approve before the Sparks land. Hand them your phone (Partner mode), or send the proof:")
+                            Text("\(store.partnerDisplayName.capitalizedFirst) needs to approve before the Sparks land. Hand them your phone (Partner tab), or send the proof:")
                                 .font(.subheadline)
                             shareButton
                         }
                         .card()
+                    } else if isPending {
+                        Label("Your Sparks are held until you add a partner to verify this.", systemImage: "hourglass")
+                            .font(.subheadline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .card()
                     } else if store.affordablePulls > 0 {
                         Button {
                             onDone()

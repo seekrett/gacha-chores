@@ -7,7 +7,15 @@
         "key": "Collection",
         "location": {
           "startingColumn": 30,
-          "startingLine": 29
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Shop",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 35
         }
       },
       {
@@ -15,7 +23,7 @@
         "key": "Series master",
         "location": {
           "startingColumn": 23,
-          "startingLine": 80
+          "startingLine": 90
         }
       },
       {
@@ -23,7 +31,7 @@
         "key": "%lld/%lld",
         "location": {
           "startingColumn": 22,
-          "startingLine": 66
+          "startingLine": 76
         }
       },
       {
@@ -31,7 +39,7 @@
         "key": "Series complete! Claim %lld Sparks + 2 tickets",
         "location": {
           "startingColumn": 27,
-          "startingLine": 75
+          "startingLine": 85
         }
       },
       {
@@ -39,7 +47,7 @@
         "key": "×%lld",
         "location": {
           "startingColumn": 34,
-          "startingLine": 115
+          "startingLine": 125
         }
       },
       {
@@ -47,7 +55,7 @@
         "key": "You have %lld Glitter. Duplicates give you more.",
         "location": {
           "startingColumn": 34,
-          "startingLine": 209
+          "startingLine": 219
         }
       },
       {
@@ -55,7 +63,7 @@
         "key": "Polished to shiny",
         "location": {
           "startingColumn": 35,
-          "startingLine": 197
+          "startingLine": 207
         }
       },
       {
@@ -63,7 +71,7 @@
         "key": "A secret figure. Only the luckiest (and tidiest) will find it.",
         "location": {
           "startingColumn": 32,
-          "startingLine": 219
+          "startingLine": 229
         }
       },
       {
@@ -71,7 +79,7 @@
         "key": "Not found yet. Open %@ capsules, or watch for it on the shop's daily shelf.",
         "location": {
           "startingColumn": 32,
-          "startingLine": 220
+          "startingLine": 230
         }
       },
       {
@@ -79,7 +87,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 38,
-          "startingLine": 186
+          "startingLine": 196
         }
       },
       {
@@ -87,7 +95,7 @@
         "key": "Owned",
         "location": {
           "startingColumn": 38,
-          "startingLine": 187
+          "startingLine": 197
         }
       },
       {
@@ -95,7 +103,7 @@
         "key": "First found",
         "location": {
           "startingColumn": 38,
-          "startingLine": 191
+          "startingLine": 201
         }
       },
       {
@@ -103,7 +111,7 @@
         "key": "Polish to shiny · %lld Glitter",
         "location": {
           "startingColumn": 39,
-          "startingLine": 205
+          "startingLine": 215
         }
       },
       {
@@ -111,7 +119,7 @@
         "key": "Show it off",
         "location": {
           "startingColumn": 35,
-          "startingLine": 214
+          "startingLine": 224
         }
       },
       {
@@ -119,7 +127,7 @@
         "key": "Done",
         "location": {
           "startingColumn": 70,
-          "startingLine": 230
+          "startingLine": 240
         }
       },
       {
@@ -127,7 +135,7 @@
         "key": "%@ · %@",
         "location": {
           "startingColumn": 18,
-          "startingLine": 240
+          "startingLine": 250
         }
       }
     ]

@@ -72,10 +72,12 @@ struct ChoresView: View {
             .alert("Assigned by \(store.partnerDisplayName)", isPresented: Binding(
                 get: { lockedAlert != nil }, set: { if !$0 { lockedAlert = nil } }
             )) {
-                Button("Partner unlock") { showPartner = true }
+                if lockedAlert?.remoteAssignerID == nil {
+                    Button("Partner unlock") { showPartner = true }
+                }
                 Button("OK", role: .cancel) {}
             } message: {
-                Text("Only \(store.partnerDisplayName) can edit or remove this chore. That's the point of accountability 😉")
+                Text("Only \(lockedAlert?.remoteAssignerName ?? store.partnerDisplayName) can edit or remove this chore. That's the point of accountability 😉")
             }
         }
     }
@@ -193,12 +195,19 @@ struct ChoreEditorView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var chore: Chore
     @State private var hasDeadline: Bool
+    @State private var saving = false
     let isNew: Bool
+    /// When set (assigning to an online partner), Save calls this instead of saving locally.
+    /// Return false to keep the editor open.
+    var onSave: ((Chore) async -> Bool)? = nil
+    var assigneeName: String? = nil
 
-    init(chore: Chore, isNew: Bool) {
+    init(chore: Chore, isNew: Bool, assigneeName: String? = nil, onSave: ((Chore) async -> Bool)? = nil) {
         _chore = State(initialValue: chore)
         _hasDeadline = State(initialValue: chore.deadline != nil)
         self.isNew = isNew
+        self.assigneeName = assigneeName
+        self.onSave = onSave
     }
 
     private var defaultDeadline: Date {
@@ -288,12 +297,14 @@ struct ChoreEditorView: View {
                     Text(chore.recurrence == .weekly ? "Weekly chores reset every week." : "Finish before the deadline for a +20% bonus.")
                 }
 
-                if store.hasPartner {
+                if store.hasPartner && onSave == nil {
                     Section {
-                        Toggle("Ask \(store.partnerDisplayName) to verify", isOn: $chore.requiresReview)
+                        Toggle("Always ask \(store.partnerDisplayName) to verify", isOn: $chore.requiresReview)
                             .disabled(chore.assignedBy == .partner)
                     } footer: {
-                        Text("Verified chores earn +15%. The Sparks unlock once \(store.partnerDisplayName) approves your proof.")
+                        Text(chore.proof == .photo || chore.proof == .beforeAfter
+                             ? "When off, a photo the AI approves pays straight away. When on, \(store.partnerDisplayName) checks it too and you get +15%."
+                             : "\(chore.proof.label) chores are always checked by \(store.partnerDisplayName). Verified chores earn +15%.")
                     }
                 }
 
@@ -307,16 +318,26 @@ struct ChoreEditorView: View {
                     }
                 }
             }
-            .navigationTitle(isNew ? (chore.assignedBy == .partner ? "Assign a chore" : "New chore") : "Edit chore")
+            .navigationTitle(assigneeName.map { isNew ? "Assign to \($0)" : "Edit \($0)'s chore" }
+                             ?? (isNew ? (chore.assignedBy == .partner ? "Assign a chore" : "New chore") : "Edit chore"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
-                        store.upsert(preparedChore)
-                        dismiss()
+                    Button(onSave == nil ? "Save" : (isNew ? "Send" : "Update")) {
+                        if let onSave {
+                            saving = true
+                            Task {
+                                let ok = await onSave(preparedChore)
+                                saving = false
+                                if ok { dismiss() }
+                            }
+                        } else {
+                            store.upsert(preparedChore)
+                            dismiss()
+                        }
                     }
-                    .disabled(chore.title.trimmingCharacters(in: .whitespaces).isEmpty)
+                    .disabled(chore.title.trimmingCharacters(in: .whitespaces).isEmpty || saving)
                 }
             }
         }

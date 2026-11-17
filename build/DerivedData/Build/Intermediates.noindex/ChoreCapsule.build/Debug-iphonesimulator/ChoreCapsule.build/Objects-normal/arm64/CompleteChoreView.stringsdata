@@ -7,7 +7,31 @@
         "key": "Cancel",
         "location": {
           "startingColumn": 74,
-          "startingLine": 57
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "Checked by AI on this iPhone. Sparks are paid only if the photo clearly shows the finished chore.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nobody can verify this yet",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 142
+        }
+      },
+      {
+        "comment": "",
+        "key": "Set up a partner",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 148
         }
       },
       {
@@ -15,23 +39,15 @@
         "key": "Checking your photo…",
         "location": {
           "startingColumn": 22,
-          "startingLine": 132
-        }
-      },
-      {
-        "comment": "",
-        "key": "Claude is making sure it really shows “%@”.",
-        "location": {
-          "startingColumn": 24,
-          "startingLine": 134
+          "startingLine": 161
         }
       },
       {
         "comment": "",
         "key": "Making sure it really shows “%@”. This stays on your phone.",
         "location": {
-          "startingColumn": 24,
-          "startingLine": 135
+          "startingColumn": 22,
+          "startingLine": 162
         }
       },
       {
@@ -39,7 +55,7 @@
         "key": "No Sparks for this one. Take a photo that clearly shows the finished chore.",
         "location": {
           "startingColumn": 18,
-          "startingLine": 155
+          "startingLine": 182
         }
       },
       {
@@ -47,7 +63,7 @@
         "key": "That doesn't look like “%@”",
         "location": {
           "startingColumn": 22,
-          "startingLine": 148
+          "startingLine": 175
         }
       },
       {
@@ -55,7 +71,7 @@
         "key": "I see: %@",
         "location": {
           "startingColumn": 22,
-          "startingLine": 152
+          "startingLine": 179
         }
       },
       {
@@ -63,7 +79,7 @@
         "key": "Retake photo",
         "location": {
           "startingColumn": 23,
-          "startingLine": 160
+          "startingLine": 187
         }
       },
       {
@@ -71,7 +87,7 @@
         "key": "AI got it wrong? Ask %@",
         "location": {
           "startingColumn": 27,
-          "startingLine": 167
+          "startingLine": 194
         }
       },
       {
@@ -79,7 +95,7 @@
         "key": "Couldn't check your photo",
         "location": {
           "startingColumn": 22,
-          "startingLine": 184
+          "startingLine": 211
         }
       },
       {
@@ -87,7 +103,7 @@
         "key": "Try again",
         "location": {
           "startingColumn": 23,
-          "startingLine": 190
+          "startingLine": 217
         }
       },
       {
@@ -95,7 +111,7 @@
         "key": "Send to %@ instead",
         "location": {
           "startingColumn": 27,
-          "startingLine": 197
+          "startingLine": 224
         }
       },
       {
@@ -103,7 +119,7 @@
         "key": "%lld/15 characters minimum",
         "location": {
           "startingColumn": 30,
-          "startingLine": 240
+          "startingLine": 267
         }
       },
       {
@@ -111,7 +127,7 @@
         "key": "Your proof",
         "location": {
           "startingColumn": 27,
-          "startingLine": 227
+          "startingLine": 254
         }
       },
       {
@@ -119,7 +135,7 @@
         "key": "What did you do? Be specific!",
         "location": {
           "startingColumn": 35,
-          "startingLine": 236
+          "startingLine": 263
         }
       },
       {
@@ -127,7 +143,7 @@
         "key": "Use the camera for a fresh photo to get a bonus",
         "location": {
           "startingColumn": 31,
-          "startingLine": 248
+          "startingLine": 275
         }
       },
       {
@@ -135,7 +151,7 @@
         "key": "Add a note (optional)",
         "location": {
           "startingColumn": 35,
-          "startingLine": 253
+          "startingLine": 279
         }
       },
       {
@@ -143,7 +159,7 @@
         "key": "I solemnly swear I actually did this 🤞",
         "location": {
           "startingColumn": 34,
-          "startingLine": 243
+          "startingLine": 270
         }
       },
       {
@@ -151,7 +167,7 @@
         "key": "You'll earn",
         "location": {
           "startingColumn": 26,
-          "startingLine": 263
+          "startingLine": 291
         }
       },
       {
@@ -159,7 +175,7 @@
         "key": "…plus a %lld%% chance of a CRITICAL CLEAN that doubles it ✨",
         "location": {
           "startingColumn": 26,
-          "startingLine": 273
+          "startingLine": 301
         }
       },
       {
@@ -167,7 +183,7 @@
         "key": "Sparks unlock once %@ approves.",
         "location": {
           "startingColumn": 30,
-          "startingLine": 276
+          "startingLine": 304
         }
       },
       {
@@ -175,7 +191,7 @@
         "key": "Total",
         "location": {
           "startingColumn": 30,
-          "startingLine": 269
+          "startingLine": 297
         }
       },
       {
@@ -183,23 +199,23 @@
         "key": "%lld",
         "location": {
           "startingColumn": 31,
-          "startingLine": 271
+          "startingLine": 299
         }
       },
       {
         "comment": "",
         "key": "Send for review",
         "location": {
-          "startingColumn": 74,
-          "startingLine": 296
+          "startingColumn": 51,
+          "startingLine": 324
         }
       },
       {
         "comment": "",
         "key": "Submit & collect",
         "location": {
-          "startingColumn": 94,
-          "startingLine": 296
+          "startingColumn": 71,
+          "startingLine": 324
         }
       },
       {
@@ -207,7 +223,7 @@
         "key": "+%lld",
         "location": {
           "startingColumn": 37,
-          "startingLine": 316
+          "startingLine": 344
         }
       },
       {
@@ -215,7 +231,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 57,
-          "startingLine": 316
+          "startingLine": 344
         }
       },
       {
@@ -223,7 +239,7 @@
         "key": "Add a photo",
         "location": {
           "startingColumn": 34,
-          "startingLine": 347
+          "startingLine": 375
         }
       },
       {
@@ -231,7 +247,7 @@
         "key": "Camera",
         "location": {
           "startingColumn": 65,
-          "startingLine": 355
+          "startingLine": 383
         }
       },
       {
@@ -239,7 +255,7 @@
         "key": "Library",
         "location": {
           "startingColumn": 27,
-          "startingLine": 359
+          "startingLine": 387
         }
       },
       {
@@ -247,7 +263,7 @@
         "key": "CRITICAL CLEAN!",
         "location": {
           "startingColumn": 30,
-          "startingLine": 449
+          "startingLine": 477
         }
       },
       {
@@ -255,7 +271,7 @@
         "key": "Sent for review!",
         "location": {
           "startingColumn": 38,
-          "startingLine": 435
+          "startingLine": 463
         }
       },
       {
@@ -263,7 +279,7 @@
         "key": "Chore complete!",
         "location": {
           "startingColumn": 59,
-          "startingLine": 435
+          "startingLine": 463
         }
       },
       {
@@ -271,7 +287,7 @@
         "key": "Photo verified by AI: %@",
         "location": {
           "startingColumn": 31,
-          "startingLine": 464
+          "startingLine": 492
         }
       },
       {
@@ -279,7 +295,23 @@
         "key": "Not checked: %@",
         "location": {
           "startingColumn": 31,
-          "startingLine": 469
+          "startingLine": 497
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sent to %@'s phone. The Sparks land as soon as one of them approves.",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 515
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your Sparks are held until you add a partner to verify this.",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 528
         }
       },
       {
@@ -287,7 +319,7 @@
         "key": "Done",
         "location": {
           "startingColumn": 28,
-          "startingLine": 503
+          "startingLine": 542
         }
       },
       {
@@ -295,7 +327,7 @@
         "key": "+%lld",
         "location": {
           "startingColumn": 30,
-          "startingLine": 442
+          "startingLine": 470
         }
       },
       {
@@ -303,7 +335,7 @@
         "key": "🎉",
         "location": {
           "startingColumn": 34,
-          "startingLine": 477
+          "startingLine": 505
         }
       },
       {
@@ -311,7 +343,7 @@
         "key": "Level %lld!",
         "location": {
           "startingColumn": 38,
-          "startingLine": 479
+          "startingLine": 507
         }
       },
       {
@@ -319,15 +351,15 @@
         "key": "You got a free capsule ticket.",
         "location": {
           "startingColumn": 38,
-          "startingLine": 480
+          "startingLine": 508
         }
       },
       {
         "comment": "",
-        "key": "%@ needs to approve before the Sparks land. Hand them your phone (Partner mode), or send the proof:",
+        "key": "%@ needs to approve before the Sparks land. Hand them your phone (Partner tab), or send the proof:",
         "location": {
           "startingColumn": 34,
-          "startingLine": 488
+          "startingLine": 522
         }
       },
       {
@@ -335,7 +367,7 @@
         "key": "Open a capsule",
         "location": {
           "startingColumn": 35,
-          "startingLine": 498
+          "startingLine": 537
         }
       },
       {
@@ -343,7 +375,7 @@
         "key": "Send proof to %@",
         "location": {
           "startingColumn": 23,
-          "startingLine": 518
+          "startingLine": 557
         }
       },
       {
@@ -351,7 +383,7 @@
         "key": "Message %@",
         "location": {
           "startingColumn": 23,
-          "startingLine": 523
+          "startingLine": 562
         }
       }
     ]
